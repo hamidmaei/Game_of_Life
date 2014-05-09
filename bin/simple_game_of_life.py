@@ -11,14 +11,15 @@ state_matrix= gl.init_grid_world()
 def animate(framenumber):
 
             global state_matrix
-            newGrid = state_matrix
 
-            mat.set_data(newGrid)
+            set_grid_world = state_matrix
 
-            newGrid = gl.set_next_state_matrix(state_matrix)
-            state_matrix = newGrid
-            return [mat]
+            mat.set_data(set_grid_world)
 
+            set_grid_world = gl.set_next_state_matrix(state_matrix)
+            state_matrix = set_grid_world
+
+            return mat
 
 
 if __name__=='__main__':

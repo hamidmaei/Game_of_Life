@@ -1,8 +1,8 @@
 Game_of_Life
 ============
-Make Sure to Install numpy library
+First, make sure to Install matplotlib---python plotting library
 
-to run from the main folder Game_of_Life:
+Second, to run from the main folder "Game_of_Life" use the following command to see the animation:
 
 $python bin/simple_game_of_life.py
 

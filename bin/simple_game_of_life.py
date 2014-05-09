@@ -4,7 +4,8 @@ from life_grid_world import *
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-gl = GridLife()
+n_rows, n_columns = 100,100
+gl = GridLife(n_rows,n_columns)
 
 state_matrix= gl.init_grid_world()
 
